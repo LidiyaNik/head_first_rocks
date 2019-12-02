@@ -1,0 +1,29 @@
+from datetime import datetime
+import random
+import time
+
+odds = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19,
+       21, 23, 25, 27, 29, 31, 33, 35, 37, 39,
+       41, 43, 45, 47, 49, 51, 53, 55, 57, 59 ]
+
+wait_time = random.randint(1,60)
+for i in range(2):
+    right_this_minute = datetime.today().minute
+
+    if right_this_minute in odds:
+        print("This minute seems a little odd.")
+    else:
+        print("Not an odd minute.")
+    time.sleep(wait_time)
+
+for i in range(3):
+    right_this_second = datetime.today().second
+
+    time.sleep(2)
+
+    if right_this_second in odds:
+        print("This second seems a little odd.")
+    else:
+        print("Not an odd second.")
+
+
