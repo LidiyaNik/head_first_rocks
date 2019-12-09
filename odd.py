@@ -15,7 +15,7 @@ for i in range(2):
     else:
         print("Not an odd minute.")
     time.sleep(wait_time)
-
+#while 
 for i in range(3):
     right_this_second = datetime.today().second
 
